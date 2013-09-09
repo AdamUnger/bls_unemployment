@@ -78,10 +78,9 @@ if __name__ == '__main__':
                         build_html_table.append('<td>{0}</td>'.format(bls_data[state][str(year)][bls.number_to_month[month]]))
                     except KeyError:
                         build_html_table.append('<td>---</td>')
-            build_html_table.append('</tr>')
+                build_html_table.append('</tr>')
         build_html_table.append('</tr>')
 
     build_html_table.append('</table>')
 
     print '\n'.join(build_html_table)
-    
