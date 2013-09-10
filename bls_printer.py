@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     if start_year > end_year or (end_year - start_year) > 10:
 
-        print "Only 10 ten years may be viewed at a time."
+        print "Only 10 years may be viewed at a time."
         sys.exit(1)        
 
     months = sorted(bls.month_to_number.values())
@@ -79,7 +79,6 @@ if __name__ == '__main__':
                     except KeyError:
                         build_html_table.append('<td>---</td>')
                 build_html_table.append('</tr>')
-        build_html_table.append('</tr>')
 
     build_html_table.append('</table>')
 
